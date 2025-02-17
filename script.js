@@ -15,15 +15,15 @@ tr.innerHTML=`
 	
 `;
 bookList.appendChild(tr);
-	document.getElementById("title").clear("");
-	document.getElementById("author").clear("");
-	document.getElementById("isbn").clear("");
+	document.getElementById("title").value="";
+	document.getElementById("author").value="";
+	document.getElementById("isbn").value="";
 });
 
 document.getElementById("book-list").addEventListener("click",(e)=>{
-	if(e.target.classList.contains("delete")){
-		e.target.parentElement.parentElement.remove();
-	}
+	if (e.target.classList.contains("delete")) {
+        e.target.closest("tr").remove(); // Remove the entire row
+    }
 });
 
 
