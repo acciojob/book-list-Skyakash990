@@ -19,9 +19,9 @@ bookList.appendChild(tr);
 	document.getElementById("author").clear("");document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent default form submission
 
-    let title = document.getElementById("title").value.trim();
-    let author = document.getElementById("author").value.trim();
-    let isbn = document.getElementById("isbn").value.trim();
+    let title = document.getElementById("title").value;
+    let author = document.getElementById("author").value;
+    let isbn = document.getElementById("isbn").value;
 
     if (title === "" || author === "" || isbn === "") {
         alert("Please fill in all fields.");
