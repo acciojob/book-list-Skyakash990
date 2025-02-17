@@ -15,9 +15,9 @@ tr.innerHTML=`
 	
 `;
 bookList.appendChild(tr);
-	document.getElementById("title").value="";
-	document.getElementById("author").value="";
-	document.getElementById("isbn").value="";
+	// document.getElementById("title").value="";
+	// document.getElementById("author").value="";
+	// document.getElementById("isbn").value="";
 });
 
 document.getElementById("book-list").addEventListener("click",(e)=>{
